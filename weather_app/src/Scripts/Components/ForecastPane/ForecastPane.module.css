@@ -1,0 +1,6 @@
+.ForecastPane{
+    background-color: rgba(128, 128, 128, 0.534);
+    border-radius: 5pt;
+    grid-column: 1 / 4;
+    grid-row: 6 / 7 ;
+}

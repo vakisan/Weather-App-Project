@@ -1,0 +1,13 @@
+.WeatherPane{
+    background-color: white;
+    border-radius: 5pt;
+    grid-column: 1 / 4;
+    grid-row: 4 / 5 ;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.WeatherMessagePane{
+    display: inline;
+    align-self: center;
+}

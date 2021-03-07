@@ -1,0 +1,10 @@
+.StatisticPane{
+    background-color: white;
+    border-radius: 5pt;
+    grid-column: 1 / 4;
+    grid-row: 5 / 6 ;
+}
+
+.StatisticItem{
+    justify-content: space-around;
+}
