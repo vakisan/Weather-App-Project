@@ -17,5 +17,3 @@ Step 6 run command -> git clone https://github.com/vakisan/Weather-App-Project.g
 Step 7 folder will be downloaded from Github.com to the weather app folder
 
 Step 8 run the project using command -> npm start
-
-
