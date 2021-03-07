@@ -16,7 +16,8 @@ class HeaderLocale extends React.Component{
                     <p>It is {this.state.date.toLocaleDateString()} and the time is {
                     this.state.date.getHours()}</p>
                     <p>Location</p>
-                    <p>Specific Location</p>
+                    <p>Specific Locations</p>
+                    <p>Hellos</p>
                 </div>
             </header>
         );
