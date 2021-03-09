@@ -11,3 +11,7 @@
     display: inline;
     align-self: center;
 }
+
+.WeatherPane div img{
+    border-radius: 10%;
+}

@@ -6,18 +6,14 @@ class NavigationBar extends React.Component{
     render(){
         return (
             <div className={Styles.NavigationBar}>
-              <div className={Styles.NavigationBar}>
-                <p>Today</p>
+              <div className={Styles.TimeBox}>
+                Today
               </div>
-              <div>
-                <p>
+              <div className={Styles.TimeBox}>
                   Tommorrow
-                </p>
               </div>
-              <div>
-                <p>
+              <div className={Styles.TimeBox}>
                   Week
-                </p>
               </div>
             </div>
           );
