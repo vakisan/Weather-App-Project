@@ -5,7 +5,7 @@ import NavigationBar from './Components/NavigationBar/NavigationBar.js'
 import WeatherPane from './Components/WeatherPane/WeatherPane.js'
 import StatisticPane from './Components/StatisticPane/StatisticPane.js'
 import ForecastPane from './Components/ForecastPane/ForecastPane.js'
-import WeatherAPI from './WeatherAPI.js'
+import WeatherAPI from './Components/WeatherPane/WeatherAPI.js'
 import React from 'react';
 
 class WeatherApp extends React.Component {
@@ -19,6 +19,7 @@ class WeatherApp extends React.Component {
           temperature: null,
           conditions: null,
           location: null,
+          icon: null
         }
 
       }
@@ -32,12 +33,10 @@ class WeatherApp extends React.Component {
         loading: false,
         data: {
           temperature: result.main.temp,
-          conditions: result.weather[0].id,
-          location: result.name
+          location: result.name,
         }
       }
     })
-    console.log(result)
   }
   
   render(){
@@ -47,7 +46,7 @@ class WeatherApp extends React.Component {
         <SearchBar></SearchBar>
         <HeaderBar location={path.location}></HeaderBar>
         <NavigationBar></NavigationBar>
-        <WeatherPane temperature={path.temperature} conditions={path.conditions}></WeatherPane>
+        <WeatherPane temperature={path.temperature}></WeatherPane>
         <StatisticPane></StatisticPane>
         <ForecastPane></ForecastPane>
         <hr></hr>

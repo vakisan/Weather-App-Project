@@ -1,31 +1,39 @@
 import React from 'react';
-import WeatherIcon from './WeatherIcon.js'
+import WeatherIcon from '../../WeatherIcon.js'
 import Styles from './WeatherPane.module.css';
 import KelvinToCelcius from './KelvinToCelcius.js'
+import WeatherAPI from './WeatherAPI.js'
 
 class WeatherPane extends React.Component{
 
     constructor(props){
       super(props);
       this.state = {
-        icon: null,
-        message: null,
+        image: null,
+        message: "Loading",
+        temperature: "Loading",
       }
     }
 
-    componentDidMount(){
+    async componentDidMount(){
+      let result = await new WeatherAPI()
+      .fetchData()
+      .then(data => {
+        return (
+          new WeatherIcon(data.weather[0].id)
+          )
+      });
       this.setState({
-        icon: new WeatherIcon(this.props.conditions).getWeatherIcon(),
-        message: new WeatherIcon(this.props.conditions).getWeatherMessage()
+        image: result.getWeatherIcon(),
+        message: result.getWeatherMessage()
       })
     }
-
 
     render(){
         return (
             <div className={Styles.WeatherPane}>
               <div>
-                <img src={this.state.icon} alt={this.state.message}/>
+                <img src={this.state.image} alt={this.state.message}/>
               </div>
               <div className={Styles.WeatherMessagePane}>
                 <p>{KelvinToCelcius(this.props.temperature)}°C</p>

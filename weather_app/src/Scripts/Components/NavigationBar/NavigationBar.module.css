@@ -6,19 +6,3 @@
     display: inline-flex;
     justify-content: space-around;
 }
-
-.NavigationBar div{
-    color: white;
-    text-align: center;
-    width: 100%;
-    border-radius: 100pt;
-    background-color: rgba(128, 128, 128, 0.452);
-}
-
-.NavigationBar div :hover{
-    background-color: rgba(3, 3, 3, 0.452);
-}
-
-.NavigationBar div:first-child{
-    background-color: rgb(128, 128, 128);
-}

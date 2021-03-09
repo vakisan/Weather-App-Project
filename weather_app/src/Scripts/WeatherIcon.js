@@ -1,14 +1,14 @@
-import CloudySunny from '../../../Images/CloudySunny.svg'
-import CloudyNight from '../../../Images/CloudyNight.svg'
-import Night from '../../../Images/Night.svg'
-import Rain from '../../../Images/Rain.svg'
-import Sunny from '../../../Images/Sunny.svg'
-import ThunderStorm from '../../../Images/ThunderStorm.svg'
+import CloudySunny from '../Images/CloudySunny.svg'
+import CloudyNight from '../Images/CloudyNight.svg'
+import Night from '../Images/Night.svg'
+import Rain from '../Images/Rain.svg'
+import Sunny from '../Images/Sunny.svg'
+import ThunderStorm from '../Images/ThunderStorm.svg'
 
 class WeatherIcon{
 
     constructor(weatherCondition){
-        let weather = {
+        this.weather = {
             CLOUDYSUNNY: {
                 Value: 0,
                 Icon: CloudySunny,
@@ -49,11 +49,10 @@ class WeatherIcon{
         }
         this.img = null;
         this.msg = null;
-        for (let property in weather) {
-            if (weather[property].Code.includes(weatherCondition)){
-                console.log(1)
-                this.img = weather[property].Icon
-                this.msg = weather[property].Message
+        for (let property in this.weather) {
+            if (this.weather[property].Code.includes(weatherCondition)){
+                this.img = this.weather[property].Icon
+                this.msg = this.weather[property].Message
             }
         }
     }
