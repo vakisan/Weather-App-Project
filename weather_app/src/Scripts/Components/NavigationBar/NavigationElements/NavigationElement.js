@@ -1,17 +1,37 @@
 import React from 'react';
+import ReactDOM from "react-dom";
 import Styles from './NavigationElement.module.css';
 
 class NavigationElement extends React.Component{
 
     constructor(props){
         super(props)
+        this.state = {
+            className: this.props.className,
+            click: this.props.click
+        }
     }
-    
+
+    static getDerivedStateFromProps(props, state) {
+        let change;
+        if (state.className == Styles.NavigationElement){
+            change = Styles.NavigationElementActive
+        }
+        else{
+            change = Styles.NavigationElement
+        }
+        return {
+            className: props.className,
+            click: change
+        }
+    }
+
+
     render(){
         return (
-            <div className={Styles.NavigationElement}>
-                {this.props.text}
-            </div>
+            <button type="button" className={this.props.className} onClick={this.props.click}>
+               {this.props.text}
+            </button>
           );
     }
 }
