@@ -1,23 +1,55 @@
-.SearchBar{
-    border-radius: 5pt;
-    grid-column: 1 /4;
-    grid-row: 1 / 2 ;
-    display: inline-flex;
-    justify-content: center;
+
+
+@media only screen and (max-width: 600px) {
+
+    .SearchBar{
+        border-radius: 5pt;
+        grid-column: 1 /4;
+        grid-row: 1 / 2 ;
+        display: inline-flex;
+        justify-content: center;
+    }
+    
+    .SearchBar input{
+        background-color: rgba(0,0,0,24%);
+        align-self: center;
+        text-align: center;
+        font-size: 12pt;
+        text-align: left;
+        padding-top: 1pt;
+        padding-bottom: 1pt;
+        padding-left: 5%;
+        width: 70%;
+        height: 35px;    
+        color: rgba(0,0,0,24%);
+        border-radius: 10pt;
+        border: none;
+    }
 }
 
-.SearchBar input{
-    background-color: rgba(0,0,0,24%);
-    align-self: center;
-    text-align: center;
-    font-size: 30pt;
-    text-align: left;
-    padding-top: 5pt;
-    padding-bottom: 5pt;
-    padding-left: 5%;
-    width: 70%;
-    height: 60px;    
-    color: rgba(0,0,0,24%);
-    border-radius: 10pt;
-    border: none;
+@media only screen and (min-width: 601px) {
+
+    .SearchBar{
+        border-radius: 5pt;
+        grid-column: 1 /4;
+        grid-row: 1 / 2 ;
+        display: inline-flex;
+        justify-content: center;
+    }
+    
+    .SearchBar input{
+        background-color: rgba(0,0,0,24%);
+        align-self: center;
+        text-align: center;
+        font-size: 30pt;
+        text-align: left;
+        padding-top: 5pt;
+        padding-bottom: 5pt;
+        padding-left: 5%;
+        width: 70%;
+        height: 60px;    
+        color: rgba(0,0,0,24%);
+        border-radius: 10pt;
+        border: none;
+    }
 }
