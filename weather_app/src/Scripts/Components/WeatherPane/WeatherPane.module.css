@@ -3,15 +3,49 @@
     border-radius: 5pt;
     grid-column: 1 / 4;
     grid-row: 4 / 5 ;
-    display: inline-flex;
-    justify-content: center;
-}
-
-.WeatherMessagePane{
     display: inline;
-    align-self: center;
+    margin-top: -10%;
 }
 
-.WeatherPane div img{
-    border-radius: 10%;
+.WeatherInfo{
+    display: inline-flex;
+    align-items: center;
+    line-height: 0pt;
+    left: 0;
+    right: 0;
+}
+
+.Stats{
+    margin-top: -10%;
+    margin-left: -15%;
+    line-height: 0pt;
+}
+
+.Temperature{
+    display: inline-flex;
+    font-size: 75pt;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(60, 60, 67, 60%);
+}
+
+.Degree{
+    margin-top:-13%;
+    font-size: 20pt;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(60, 60, 67, 60%);
+}
+
+.Description{
+    margin-top: -30pt;
+    font-size: 20pt;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(60, 60, 67, 85%);
+    font-weight: 800;
+    -webkit-text-stroke: 1px;
+}
+
+.Image{
+    object-fit: cover;
+    width: 650px;
+    height: 650px;
 }

@@ -1,0 +1,14 @@
+.NavigationElement{
+    background-color: rgba(255,255,255,68%);
+    width: 100%;
+    margin: 5px;
+    border-radius: 10pt;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14pt;
+    min-height: 50px;
+    box-shadow: 2px 3px 8px rgba(0, 0, 0, 16%);
+}

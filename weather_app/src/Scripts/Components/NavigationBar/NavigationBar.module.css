@@ -1,8 +1,11 @@
 .NavigationBar{
-    background-color: white;
-    border-radius: 5pt;
     grid-column: 1 / 4;
     grid-row: 3 / 4 ;
     display: inline-flex;
     justify-content: space-around;
+    background-color: rgba(118, 118, 128, 12%);
+    border-radius: 10pt;
+    height: 60px;
+    width: 70%;
+    justify-self: center;
 }

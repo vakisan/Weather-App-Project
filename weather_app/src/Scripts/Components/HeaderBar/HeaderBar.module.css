@@ -4,3 +4,24 @@
     grid-column: 1 / 4;
     grid-row: 2 / 3 ;
 }
+
+.Date{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30pt;
+}
+
+.Location{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40pt;
+}
+
+.SpLocation{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20pt;
+    color: #3C3C43;
+}
+
+.Line{
+    background-color: #3C3C43;
+    width: 70%;
+}

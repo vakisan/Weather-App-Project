@@ -32,12 +32,12 @@ class WeatherPane extends React.Component{
     render(){
         return (
             <div className={Styles.WeatherPane}>
-              <div>
-                <img src={this.state.image} alt={this.state.message}/>
+              <div className={Styles.WeatherInfo}>
+                <img className={Styles.Image} src={this.state.image} alt={this.state.message}/>
+                <div className={Styles.Stats}>
+                  <p className={Styles.Temperature}>{KelvinToCelcius(this.props.temperature)}<sup className={Styles.Degree}>°C</sup></p>
+                  <p className={Styles.Description}>{this.state.message}</p>
               </div>
-              <div className={Styles.WeatherMessagePane}>
-                <p>{KelvinToCelcius(this.props.temperature)}°C</p>
-                <p>{this.state.message}</p>
               </div>
             </div>
           );
