@@ -31,6 +31,7 @@
 
 
     .SearchBar{
+        background-color: transparent;
         border-radius: 5pt;
         grid-column: 1 /4;
         grid-row: 1 / 2 ;
@@ -42,12 +43,12 @@
         background-color: rgba(0,0,0,24%);
         align-self: center;
         text-align: center;
-        font-size: 30pt;
+        font-size: 20pt;
         text-align: left;
         padding-top: 5px;
         padding-bottom: 5px;
         width: 70%;
-        height: 60px;    
+        height: 40px;    
         color: rgba(0,0,0,24%);
         border-radius: 10pt;
         border: none;

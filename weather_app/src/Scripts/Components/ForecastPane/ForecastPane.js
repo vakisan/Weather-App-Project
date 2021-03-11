@@ -9,7 +9,7 @@ class ForecastPane extends React.Component{
               <div>
                 Insert Table Element here
               </div>
-              <button className={Styles.GPSButton} onClick={this.props.getData}></button>
+              <button className={Styles.GPSButton} onClick={this.getData}></button>
             </div>
           );
     }

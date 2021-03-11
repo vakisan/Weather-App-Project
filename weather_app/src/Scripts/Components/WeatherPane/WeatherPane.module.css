@@ -1,5 +1,5 @@
 .WeatherPane{
-    background-color: white;
+    background-color: transparent;
     border-radius: 5pt;
     grid-column: 1 / 4;
     grid-row: 4 / 5 ;
@@ -46,9 +46,6 @@
 }
 
 .Image{
-    object-fit: cover;
-    width: 514px;
-    height: 514px;
 }
 
 
@@ -101,9 +98,6 @@
     }
     
     .Image{
-        object-fit: cover;
-        width: 250px;
-        height: 250px;
     }
 
 }

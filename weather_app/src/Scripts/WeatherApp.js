@@ -20,7 +20,7 @@ class WeatherApp extends React.Component {
           conditions: null,
           city: null,
           town: null,
-          icon: null
+          icon: null,
         }
 
       }

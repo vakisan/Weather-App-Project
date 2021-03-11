@@ -1,0 +1,31 @@
+.StatsElement{
+    background-color: transparent;
+    border-radius: 5pt;
+    grid-column: 1 / 4;
+    grid-row: 5 / 6 ;
+}
+
+.StatsElementRight{
+    background-color: transparent;
+    border-radius: 5pt;
+    grid-column: 1 / 4;
+    grid-row: 5 / 6 ;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.Title{
+    font-family: Helvetica, sans-serif;
+    font-size: 14pt;
+}
+
+.Description{
+    font-family: Helvetica, sans-serif;
+    font-size: 12pt;
+    color: rgba(60, 60, 67, 60%);
+}
+
+.Image{
+    grid-column: 2/3;
+    align-self: center;
+}
