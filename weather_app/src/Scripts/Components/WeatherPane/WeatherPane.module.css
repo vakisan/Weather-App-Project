@@ -4,7 +4,6 @@
     grid-column: 1 / 4;
     grid-row: 4 / 5 ;
     display: inline;
-    margin-top: -10%;
 }
 
 .WeatherInfo{
@@ -26,6 +25,7 @@
     font-size: 75pt;
     font-family: Arial, Helvetica, sans-serif;
     color: rgba(60, 60, 67, 60%);
+    letter-spacing: -7pt;
 }
 
 .Degree{
@@ -33,21 +33,22 @@
     font-size: 20pt;
     font-family: Arial, Helvetica, sans-serif;
     color: rgba(60, 60, 67, 60%);
+    letter-spacing: 0pt
 }
 
 .Description{
     margin-top: -30pt;
-    font-size: 20pt;
+    font-size: 25pt;
     font-family: Arial, Helvetica, sans-serif;
     color: rgba(60, 60, 67, 85%);
     font-weight: 800;
-    -webkit-text-stroke: 1px;
+    letter-spacing: -2pt;
 }
 
 .Image{
     object-fit: cover;
-    width: 650px;
-    height: 650px;
+    width: 514px;
+    height: 514px;
 }
 
 
@@ -59,7 +60,7 @@
         grid-column: 1 / 4;
         grid-row: 4 / 5 ;
         display: inline;
-        margin-top: 5%;
+        margin-top: 0;
     }
     
     .WeatherInfo{

@@ -18,41 +18,68 @@ class WeatherApp extends React.Component {
         data: {
           temperature: null,
           conditions: null,
-          location: null,
+          city: null,
+          town: null,
           icon: null
         }
 
       }
     }
+    this.getData = this.getData.bind(this)
   }
 
   async componentDidMount(){
-    const result = await new WeatherAPI().fetchData()
-    this.setState({
+    this.getData()
+  }
+
+  async getData(){
+    if(document.getElementById("lat").textContent === ""){
+      const result = await new WeatherAPI(51.5241,-0.0404).fetchLocationData()
+      this.setState({
+        API: {
+          loading: false,
+          data: {
+            city: result.results[0].address_components[0].long_name,
+            town: result.results[0].address_components[1].long_name
+          }
+        }
+      })
+    }
+    else{
+      const result = await new WeatherAPI(document.getElementById("lat").textContent,document.getElementById("lon").textContent).fetchLocationData()
+      this.setState({
       API: {
         loading: false,
         data: {
-          temperature: result.main.temp,
-          location: result.name,
+          city: result.results[0].address_components[0].long_name,
+          town: result.results[0].address_components[1].long_name
         }
       }
     })
+    }
   }
+
+
   
   render(){
     const path = this.state.API.data;
     return(
       <div className="Main_Screen">
         <SearchBar></SearchBar>
-        <HeaderBar location={path.location}></HeaderBar>
+        <HeaderBar city={path.city} town={path.town}></HeaderBar>
         <NavigationBar></NavigationBar>
-        <WeatherPane temperature={path.temperature}></WeatherPane>
+        <WeatherPane></WeatherPane>
         <StatisticPane></StatisticPane>
-        <ForecastPane></ForecastPane>
+        <ForecastPane click={this.getData}></ForecastPane>
         <hr></hr>
+        <button onClick={this.getData}>Update Location</button>
       </div>
     );
   }
 }
 
 export default WeatherApp;
+
+/*
+
+*/

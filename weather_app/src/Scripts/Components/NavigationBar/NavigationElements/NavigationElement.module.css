@@ -1,4 +1,5 @@
 .NavigationElement{
+    outline: none;
     background-color: rgba(118, 118, 128, 0);
     width: 100%;
     margin: 5px;
@@ -15,6 +16,7 @@
 }
 
 .NavigationElement:hover{
+    outline: none;
     animation-name: OnHover;
     animation-duration: 1s;
     animation-timing-function: cubic-bezier(0.00075, 0.2, 0.05, 1);
@@ -24,6 +26,7 @@
 }
 
 .NavigationElementActive{
+    outline: none;
     background-color: rgba(255,255,255,68%);
     box-shadow: 2px 3px 8px rgba(0, 0, 0, 16%);
     width: 150%;
@@ -45,7 +48,7 @@
 @keyframes OnHover{
 
     from{
-        width: 150%;
+        width: 120%;
         background-color: rgba(118, 118, 128, 0%);
     }
     to{

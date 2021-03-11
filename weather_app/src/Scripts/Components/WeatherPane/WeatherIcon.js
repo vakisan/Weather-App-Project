@@ -1,9 +1,9 @@
-import CloudySunny from '../Images/CloudySunny.svg'
-import CloudyNight from '../Images/CloudyNight.svg'
-import Night from '../Images/Night.svg'
-import Rain from '../Images/Rain.svg'
-import Sunny from '../Images/Sunny.svg'
-import ThunderStorm from '../Images/ThunderStorm.svg'
+import CloudySunny from '../../../Images/CloudySunny.svg'
+import CloudyNight from '../../../Images/CloudyNight.svg'
+import Night from '../../../Images/Night.svg'
+import Rain from '../../../Images/Rain.svg'
+import Sunny from '../../../Images/Sunny.svg'
+import ThunderStorm from '../../../Images/ThunderStorm.svg'
 
 class WeatherIcon{
 

@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from "react-dom";
 import Styles from './NavigationElement.module.css';
 
 class NavigationElement extends React.Component{
@@ -14,7 +13,7 @@ class NavigationElement extends React.Component{
 
     static getDerivedStateFromProps(props, state) {
         let change;
-        if (state.className == Styles.NavigationElement){
+        if (state.className === Styles.NavigationElement){
             change = Styles.NavigationElementActive
         }
         else{

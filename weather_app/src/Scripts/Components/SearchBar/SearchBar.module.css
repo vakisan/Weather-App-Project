@@ -29,6 +29,7 @@
 
 @media only screen and (min-width: 601px) {
 
+
     .SearchBar{
         border-radius: 5pt;
         grid-column: 1 /4;
@@ -43,13 +44,16 @@
         text-align: center;
         font-size: 30pt;
         text-align: left;
-        padding-top: 5pt;
-        padding-bottom: 5pt;
-        padding-left: 5%;
+        padding-top: 5px;
+        padding-bottom: 5px;
         width: 70%;
         height: 60px;    
         color: rgba(0,0,0,24%);
         border-radius: 10pt;
         border: none;
+        background-image: url(../../../Images/Loop.svg);
+        background-repeat: no-repeat;
+        background-position: 10px;
+        text-indent: 10%;
     }
 }
