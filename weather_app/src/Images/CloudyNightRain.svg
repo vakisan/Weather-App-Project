@@ -23,7 +23,7 @@
       <stop offset="0" stop-color="#a8a8a8"/>
       <stop offset="1" stop-color="#eaeaea"/>
     </linearGradient>
-    <filter id="Subtraction_2" x="170.846" y="55.11" width="118.956" height="118.954" filterUnits="userSpaceOnUse">
+    <filter id="Subtraction_2" x="168.846" y="44.609" width="118.956" height="118.954" filterUnits="userSpaceOnUse">
       <feOffset input="SourceAlpha"/>
       <feGaussianBlur stdDeviation="10" result="blur-2"/>
       <feFlood flood-color="#fff"/>
@@ -38,7 +38,7 @@
       <stop offset="0" stop-color="#fff"/>
       <stop offset="1" stop-color="#f2f2f2"/>
     </linearGradient>
-    <filter id="Subtraction_1" x="181.282" y="66.411" width="113.643" height="113.641" filterUnits="userSpaceOnUse">
+    <filter id="Subtraction_1" x="179.282" y="55.91" width="113.643" height="113.641" filterUnits="userSpaceOnUse">
       <feOffset input="SourceAlpha"/>
       <feGaussianBlur stdDeviation="10" result="blur-3"/>
       <feFlood flood-color="#fff"/>
@@ -49,13 +49,17 @@
       <stop offset="0" stop-color="#fff"/>
       <stop offset="1" stop-color="#fff"/>
     </linearGradient>
-    <filter id="clouds" x="68" y="44.697" width="253.041" height="202" filterUnits="userSpaceOnUse">
+    <filter id="clouds" x="66" y="34.195" width="253.041" height="202" filterUnits="userSpaceOnUse">
       <feOffset input="SourceAlpha"/>
       <feGaussianBlur stdDeviation="20" result="blur-4"/>
       <feFlood flood-color="#fff" flood-opacity="0.447"/>
       <feComposite operator="in" in2="blur-4"/>
       <feComposite in="SourceGraphic"/>
     </filter>
+    <linearGradient id="linear-gradient-23" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f0fdff"/>
+      <stop offset="1" stop-color="#65f3ff"/>
+    </linearGradient>
     <clipPath id="clip-Custom_Size_1">
       <rect width="400" height="350"/>
     </clipPath>
@@ -78,15 +82,15 @@
       <ellipse id="Ellipse_63" data-name="Ellipse 63" cx="4.499" cy="4.499" rx="4.499" ry="4.499" transform="translate(648.948 192.61)" opacity="0.104" fill="url(#linear-gradient-3)"/>
       <ellipse id="Ellipse_64" data-name="Ellipse 64" cx="1.5" cy="1.5" rx="1.5" ry="1.5" transform="translate(677.948 299.61)" opacity="0.286" fill="url(#linear-gradient-3)"/>
       <ellipse id="Ellipse_65" data-name="Ellipse 65" cx="4.499" cy="4.499" rx="4.499" ry="4.499" transform="translate(687.948 333.61)" opacity="0.172" fill="url(#linear-gradient-3)"/>
-      <g id="Group_28" data-name="Group 28" transform="translate(0 1.697)">
+      <g id="Group_28" data-name="Group 28" transform="translate(-2 -8.805)">
         <g id="Group_24" data-name="Group 24" transform="translate(159.979 -199.457)">
           <g id="sun" transform="translate(440.868 436.871)">
-            <g transform="matrix(1, 0, 0, 1, -200.85, -85.11)" filter="url(#Subtraction_2)">
-              <path id="Subtraction_2-2" data-name="Subtraction 2" d="M22.957,53.641a30.437,30.437,0,0,1-12.8-2.787A30.774,30.774,0,0,1,0,43.317,30.7,30.7,0,0,0,48.639,32.306,30.656,30.656,0,0,0,43.322,0a30.781,30.781,0,0,1,7.535,10.161A30.719,30.719,0,0,1,34.9,51.229,30.494,30.494,0,0,1,22.957,53.641Z" transform="matrix(-0.99, -0.1, 0.1, -0.99, 254.2, 144.06)" fill="url(#linear-gradient-13)"/>
+            <g transform="matrix(1, 0, 0, 1, -198.85, -74.61)" filter="url(#Subtraction_2)">
+              <path id="Subtraction_2-2" data-name="Subtraction 2" d="M22.957,53.641a30.437,30.437,0,0,1-12.8-2.787A30.774,30.774,0,0,1,0,43.317,30.7,30.7,0,0,0,48.639,32.306,30.656,30.656,0,0,0,43.322,0a30.781,30.781,0,0,1,7.535,10.161A30.719,30.719,0,0,1,34.9,51.229,30.494,30.494,0,0,1,22.957,53.641Z" transform="matrix(-0.99, -0.1, 0.1, -0.99, 252.2, 133.56)" fill="url(#linear-gradient-13)"/>
             </g>
             <circle id="Ellipse_39" data-name="Ellipse 39" cx="30.686" cy="30.686" r="30.686" transform="translate(2.708 3.569)" fill="url(#linear-gradient-14)"/>
-            <g transform="matrix(1, 0, 0, 1, -200.85, -85.11)" filter="url(#Subtraction_1)">
-              <path id="Subtraction_1-2" data-name="Subtraction 1" d="M22.957,53.641a30.437,30.437,0,0,1-12.8-2.787A30.774,30.774,0,0,1,0,43.317,30.7,30.7,0,0,0,48.639,32.306,30.656,30.656,0,0,0,43.322,0a30.781,30.781,0,0,1,7.535,10.161A30.719,30.719,0,0,1,34.9,51.229,30.494,30.494,0,0,1,22.957,53.641Z" transform="translate(211.28 96.41)" fill="url(#linear-gradient-15)"/>
+            <g transform="matrix(1, 0, 0, 1, -198.85, -74.61)" filter="url(#Subtraction_1)">
+              <path id="Subtraction_1-2" data-name="Subtraction 1" d="M22.957,53.641a30.437,30.437,0,0,1-12.8-2.787A30.774,30.774,0,0,1,0,43.317,30.7,30.7,0,0,0,48.639,32.306,30.656,30.656,0,0,0,43.322,0a30.781,30.781,0,0,1,7.535,10.161A30.719,30.719,0,0,1,34.9,51.229,30.494,30.494,0,0,1,22.957,53.641Z" transform="translate(209.28 85.91)" fill="url(#linear-gradient-15)"/>
             </g>
           </g>
           <circle id="Ellipse_44" data-name="Ellipse 44" cx="2.161" cy="2.161" r="2.161" transform="translate(454.812 460.321)" fill="url(#linear-gradient-3)"/>
@@ -97,12 +101,17 @@
           <ellipse id="Ellipse_55" data-name="Ellipse 55" cx="2.416" cy="2.416" rx="2.416" ry="2.416" transform="translate(484.416 486.858)" opacity="0.631" fill="url(#linear-gradient-3)"/>
         </g>
         <g id="cloud" transform="translate(362 -4)">
-          <g transform="matrix(1, 0, 0, 1, 38, 156.3)" filter="url(#clouds)">
-            <path id="clouds-2" data-name="clouds" d="M53.551,82q-1.129,0-2.23-.109Q50.15,82,48.949,82H25.52a25.52,25.52,0,0,1-.172-51.04,35.148,35.148,0,0,1,69.646-1.1,27.2,27.2,0,0,1,30.614,43.623A22.55,22.55,0,0,1,107.939,82Z" transform="translate(128 104.7)" fill="url(#linear-gradient-22)"/>
+          <g transform="matrix(1, 0, 0, 1, 40, 166.8)" filter="url(#clouds)">
+            <path id="clouds-2" data-name="clouds" d="M53.551,82q-1.129,0-2.23-.109Q50.15,82,48.949,82H25.52a25.52,25.52,0,0,1-.172-51.04,35.148,35.148,0,0,1,69.646-1.1,27.2,27.2,0,0,1,30.614,43.623A22.55,22.55,0,0,1,107.939,82Z" transform="translate(126 94.2)" fill="url(#linear-gradient-22)"/>
           </g>
           <path id="Subtraction_3" data-name="Subtraction 3" d="M60.78,82H56.6c.744,0,1.5-.04,2.249-.109.636.062,1.285.1,1.929.107ZM32.726,82H25.52a25.52,25.52,0,0,1-.172-51.04A35.111,35.111,0,0,1,60.245,0,35.691,35.691,0,0,1,64.01.2,35.125,35.125,0,0,0,32.879,30.96,25.52,25.52,0,0,0,32.726,82Zm69.8-52.136h0c-.1-.668-.222-1.342-.362-2a27.552,27.552,0,0,1,7.449.011,27.007,27.007,0,0,0-7.085,1.993Z" transform="translate(166 261)" fill="#fff"/>
         </g>
       </g>
+    </g>
+    <g id="Group_29" data-name="Group 29" transform="translate(-394 -153.861)">
+      <path id="Path_1057" data-name="Path 1057" d="M7.314,0c1.143,0,1.662.344,2.718,2.059,2.35,3.81,4.6,11.219,4.6,14.116A7.314,7.314,0,0,1,0,16.174C0,13.44,2.063,6.682,4.371,2.449,5.347.654,6.009,0,7.314,0Z" transform="matrix(0.848, 0.53, -0.53, 0.848, 550.447, 337.535)" fill="url(#linear-gradient-23)"/>
+      <path id="Path_1058" data-name="Path 1058" d="M7.314,0c1.143,0,1.662.344,2.718,2.059,2.35,3.81,4.6,11.219,4.6,14.116A7.314,7.314,0,0,1,0,16.174C0,13.44,2.063,6.682,4.371,2.449,5.347.654,6.009,0,7.314,0Z" transform="matrix(0.848, 0.53, -0.53, 0.848, 582.447, 337.535)" fill="url(#linear-gradient-23)"/>
+      <path id="Path_1059" data-name="Path 1059" d="M7.314,0c1.143,0,1.662.344,2.718,2.059,2.35,3.81,4.6,11.219,4.6,14.116A7.314,7.314,0,0,1,0,16.174C0,13.44,2.063,6.682,4.371,2.449,5.347.654,6.009,0,7.314,0Z" transform="matrix(0.848, 0.53, -0.53, 0.848, 613.447, 337.535)" fill="url(#linear-gradient-23)"/>
     </g>
   </g>
 </svg>

@@ -1,8 +1,35 @@
 .ForecastPane{
-    background-color: rgba(128, 128, 128, 0.534);
+    font-family: Helvetica, sans-serif;
+    font-size: 14pt;
+    background-color: rgba(238, 238, 240, 35%);
     border-radius: 5pt;
     grid-column: 1 / 4;
-    grid-row: 6 / 7 ;
+    grid-row: 6 / 7;
+    margin-top: -60px;
+    width: 70%;
+    justify-self: center;
+    display: grid;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    grid-template-columns: repeat(24,1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.Line{
+    width: 80%;
+    background-color: rgba(209, 209, 211, 100);
+}
+
+.item{
+    grid-column: 1/2;
+}
+
+.HourColumn{
+    scroll-snap-align: start;
+}
+
+.Drop{
+    margin-right: 5px;
 }
 
 .GPSButton{
@@ -27,8 +54,8 @@
     box-shadow: 2px 3px 8px rgba(0, 0, 0, 16%);
     border-radius: 50%;
     position: fixed;
-    right:10%;
-    bottom: 15%;
+    right:1%;
+    bottom: 1%;
     height: 90px;
     width: 90px;
     background-image: url(../../../Images/gps.svg);

@@ -15,7 +15,7 @@
     font-family: Helvetica, sans-serif;
     font-size: 40pt;
     margin: 0%;
-    margin-bottom: 2%;
+    margin-bottom: 20px;
 }
 
 .SpLocation{
@@ -28,7 +28,7 @@
 .Line{
     color: rgba(60, 60, 67, 60%);
     width: 70%;
-    margin-bottom: 5%;
+    margin-bottom: 40px;
 }
 
 @media only screen and (max-width: 600px) {

@@ -1,14 +1,14 @@
-import CloudySunny from '../../../Images/CloudySunny.svg'
-import CloudyNight from '../../../Images/CloudyNight.svg'
-import Night from '../../../Images/CloudyNight.svg'
-import Rain from '../../../Images/Rain.svg'
-import Sunny from '../../../Images/CloudySunny.svg'
-import ThunderStorm from '../../../Images/ThunderStorm.svg'
-import NightRain from '../../../Images/CloudyNightRain.svg'
+import CloudySunny from '../../../Images/CloudySunnyMini.svg'
+import CloudyNight from '../../../Images/CloudyNightMini.svg'
+import Night from '../../../Images/CloudyNightMini.svg'
+import Rain from '../../../Images/RainMini.svg'
+import Sunny from '../../../Images/CloudySunnyMini.svg'
+import ThunderStorm from '../../../Images/ThunderStormMini.svg'
+import NightRain from '../../../Images/CloudyNightRainMini.svg'
 
-class WeatherIcon{
+class WeatherMiniIcon{
 
-    constructor(weatherCondition){
+    constructor(weatherCondition,hour){
         this.weather = {
             CLOUDYSUNNY: {
                 Value: 0,
@@ -56,7 +56,6 @@ class WeatherIcon{
         }
         this.img = null;
         this.msg = null;
-        let hour = new Date().getHours()
         for (let property in this.weather) {
             if (this.weather[property].Code.includes(weatherCondition)){
                 this.img = this.weather[property].Icon
@@ -94,4 +93,4 @@ class WeatherIcon{
     }
 }
 
-export default WeatherIcon
+export default WeatherMiniIcon

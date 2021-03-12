@@ -60,6 +60,7 @@ class StatisticPane extends React.Component{
                   description={this.state.exercise}
                 >
                 </StatsElement>
+                <hr className={Styles.Line}/>
               </div>
               <div className={Styles.Column2}>
                 <StatsElementRight 
