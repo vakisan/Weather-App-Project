@@ -1,4 +1,4 @@
-import '../Styles/WeatherApp.css';
+import Styles from '../Styles/WeatherApp.css';
 import SearchBar from './Components/SearchBar/SearchBar.js'
 import HeaderBar from './Components/HeaderBar/HeaderBar.js'
 import NavigationBar from './Components/NavigationBar/NavigationBar.js'
@@ -7,6 +7,10 @@ import StatisticPane from './Components/StatisticPane/StatisticPane.js'
 import ForecastPane from './Components/ForecastPane/ForecastPane.js'
 import WeatherAPI from './Components/WeatherPane/WeatherAPI.js'
 import React from 'react';
+import Background from '../Images/LondonBigBen.png'
+import Sun from '../Images/SunBackground.svg'
+import Clouds1 from '../Images/Clouds.svg'
+import Clouds2 from '../Images/Clouds1.svg'
 
 class WeatherApp extends React.Component {
 
@@ -59,12 +63,26 @@ class WeatherApp extends React.Component {
     }
   }
 
-
+  /*
+  <div className="Background">
+        <img src={Background}></img>
+      </div>
+  */
   
   render(){
     const path = this.state.API.data;
     return(
+      <div className="ParentDiv">
+        <div className="BackgroundContainer">
+          <div className="Background">
+            <img className="BackgroundImage" height={window.innerHeight} width={window.innerWidth} src={Background}></img>
+        </div>
+      </div>
       <div className="Main_Screen">
+      <img className="Clouds1" src={Clouds1}></img>
+      <img className="Clouds2" src={Clouds2}></img>
+      <img className="Clouds3" src={Clouds1}></img>
+      <img className="BackgroundSun" src={Sun}></img>
         <SearchBar></SearchBar>
         <HeaderBar city={path.city} town={path.town}></HeaderBar>
         <NavigationBar></NavigationBar>
@@ -73,6 +91,7 @@ class WeatherApp extends React.Component {
         <ForecastPane click={this.getData}></ForecastPane>
         <hr></hr>
         <button onClick={this.getData}>Update Location</button>
+      </div>
       </div>
     );
   }
