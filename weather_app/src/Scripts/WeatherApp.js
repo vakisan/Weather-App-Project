@@ -1,4 +1,4 @@
-import Styles from '../Styles/WeatherApp.css';
+import '../Styles/WeatherApp.css';
 import SearchBar from './Components/SearchBar/SearchBar.js'
 import HeaderBar from './Components/HeaderBar/HeaderBar.js'
 import NavigationBar from './Components/NavigationBar/NavigationBar.js'
@@ -90,7 +90,7 @@ class WeatherApp extends React.Component {
         <StatisticPane></StatisticPane>
         <ForecastPane click={this.getData}></ForecastPane>
         <hr></hr>
-        <button onClick={this.getData}>Update Location</button>
+        <button className="GPSButton" onClick={this.getData}></button>
       </div>
       </div>
     );
