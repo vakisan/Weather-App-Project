@@ -2,7 +2,7 @@ import React from 'react';
 import Styles from './NavigationElement.module.css';
 
 class NavigationElement extends React.Component{
-
+    //constructor for navigation element
     constructor(props){
         super(props)
         this.state = {
@@ -10,7 +10,7 @@ class NavigationElement extends React.Component{
             click: this.props.click
         }
     }
-
+    //v help?
     static getDerivedStateFromProps(props, state) {
         let change;
         if (state.className === Styles.NavigationElement){

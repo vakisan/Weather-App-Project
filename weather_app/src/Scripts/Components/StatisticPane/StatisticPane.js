@@ -9,7 +9,7 @@ import Sunrise from '../../../Images/Sunrise.svg'
 import WeatherAPI from '../WeatherPane/WeatherAPI';
 
 class StatisticPane extends React.Component{
-
+  //constructor for the statistics pane
   constructor(props){
     super(props)
     this.state={
@@ -19,21 +19,20 @@ class StatisticPane extends React.Component{
       sunset:null
     }
   }
+//51.5241,-0.0404
+  // async componentDidMount(){
+  //   let weatherData = await new WeatherAPI(30,20)
+  //   .fetchLocationWeatherData()
+  //   .then(data => {return data})
 
-  async componentDidMount(){
-    let weatherData = await new WeatherAPI(51.5241,-0.0404)
-    .fetchLocationWeatherData()
-    .then(data => {return data})
-
-    console.log(weatherData)
-    this.setState({
-      humidity: weatherData.main.humidity,
-      exercise: this.getExerciseRecommendation(weatherData.main.humidity),
-      sunrise: new Date(weatherData.sys.sunrise*1000).toLocaleTimeString(),
-      sunset: new Date(weatherData.sys.sunset*1000).toLocaleTimeString()
-    })
-  }
-
+  //   this.setState({
+      // humidity: weatherData.main.humidity,
+      // exercise: this.getExerciseRecommendation(weatherData.main.humidity),
+      // sunrise: new Date(weatherData.sys.sunrise*1000).toLocaleTimeString(),
+      // sunset: new Date(weatherData.sys.sunset*1000).toLocaleTimeString()
+  //   })
+  // }
+  // Retrieve the recommendations - If user should exercise outside or inside.
   getExerciseRecommendation(){
     if(this.state.humidity >= 60){
       return "Indoors"
@@ -42,7 +41,37 @@ class StatisticPane extends React.Component{
       return "Outdoors"
     }
   }
-    
+  
+  componentDidMount(){
+    this.componentDidUpdate()
+  }
+  //checks if the statistics data got updated
+  async componentDidUpdate(){
+    if(document.getElementById("latSearch").textContent === ""){
+      if(document.getElementById("lat").textContent ===""){
+        let weatherData = await new WeatherAPI(51.5241,-0.0404).fetchLocationWeatherData()
+        this.state.humidity= weatherData.main.humidity
+        this.state.exercise= this.getExerciseRecommendation(weatherData.main.humidity)
+        this.state.sunrise= new Date(weatherData.sys.sunrise*1000).toLocaleTimeString()
+        this.state.sunset= new Date(weatherData.sys.sunset*1000).toLocaleTimeString()
+      }
+      else{
+        let weatherData = await new WeatherAPI(document.getElementById("lat").textContent,document.getElementById("lon").textContent).fetchLocationWeatherData()
+        this.state.humidity= weatherData.main.humidity
+        this.state.exercise= this.getExerciseRecommendation(weatherData.main.humidity)
+        this.state.sunrise= new Date(weatherData.sys.sunrise*1000).toLocaleTimeString()
+        this.state.sunset= new Date(weatherData.sys.sunset*1000).toLocaleTimeString()
+      }
+    }
+    else{
+      let weatherData = await new WeatherAPI(document.getElementById("latSearch").textContent,document.getElementById("lonSearch").textContent).fetchLocationWeatherData()
+      this.state.humidity= weatherData.main.humidity
+      this.state.exercise= this.getExerciseRecommendation(weatherData.main.humidity)
+      this.state.sunrise= new Date(weatherData.sys.sunrise*1000).toLocaleTimeString()
+      this.state.sunset= new Date(weatherData.sys.sunset*1000).toLocaleTimeString()
+    }
+  }
+    // HTML structure of the Statistics section.
     render(){
         return (
             <div className={Styles.StatisticPane}>

@@ -7,7 +7,7 @@ class StatsElement extends React.Component{
         return (
             <div className={Styles.StatsElement}>
                     <p className={Styles.Title}>{this.props.stats_name}</p>
-                    <p className={Styles.Description}><img src={this.props.icon}/>{this.props.description}</p>
+                    <p className={Styles.Description}><img src={this.props.icon} img="Description"/>{this.props.description}</p>
             </div>
           );
     }

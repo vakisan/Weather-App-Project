@@ -4,7 +4,7 @@ import ButtonStyles from './NavigationElements/NavigationElement.module.css';
 import NavigationElement from './NavigationElements/NavigationElement.js'
 
 class NavigationBar extends React.Component{
-
+    //constructor for the navigation bar
     constructor(props){
       super(props)
       this.setActiveTomorrow = this.setActiveTomorrow.bind(this)
@@ -18,7 +18,7 @@ class NavigationBar extends React.Component{
         WeekToggle: ButtonStyles.NavigationElement,
       }
     }
-
+    //switches to weather forecast for tomorrow
     setActiveTomorrow(){
       this.setState({
         TodayToggle: ButtonStyles.NavigationElement,
@@ -26,7 +26,7 @@ class NavigationBar extends React.Component{
         WeekToggle: ButtonStyles.NavigationElement,
       })
     }
-
+    //switches to weather forecast for this week
     setActiveWeek(){
       this.setState({
         TodayToggle: ButtonStyles.NavigationElement,
@@ -34,7 +34,7 @@ class NavigationBar extends React.Component{
         WeekToggle: ButtonStyles.NavigationElementActive,
       })
     }
-
+    //switches to weather forecast for today
     setActiveToday(){
       this.setState({
         TodayToggle: ButtonStyles.NavigationElementActive,
@@ -42,7 +42,8 @@ class NavigationBar extends React.Component{
         WeekToggle: ButtonStyles.NavigationElement,
       })
     }
-    
+    // Here the user can select which weather forcast they would like to see.
+    // Todays, tomorrows or this week.
     render(){
         return (
             <div className={Styles.NavigationBar}>

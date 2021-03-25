@@ -25,28 +25,15 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
-    <script>
-
-      if('geolocation' in navigator){ 
-        navigator.geolocation.getCurrentPosition(function(position){
-          const lat = position.coords.latitude
-          const lon = position.coords.longitude
-          document.getElementById("lat").innerHTML = lat
-          document.getElementById("lon").innerHTML = lon
-          document.getElementById("lat").hidden = true
-          document.getElementById("lon").hidden = true
-        })
-      }
-      else{
-          console.log("Not available")
-        }
-      
-    </script>
+    <script></script>
   </head>
-  <body>
+  <body style="overflow-x:hidden">
     <noscript>You need to enable JavaScript to run this app.</noscript>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBeHCeK6XYL1MIDlsvL2dS7PMZIyhfpgbA&libraries=places"></script>
     <div id="lat"></div>
     <div id="lon"></div>
+    <div id="latSearch"></div>
+    <div id="lonSearch"></div>
     <div id="root"></div>
     <!--
       This HTML file is a template.

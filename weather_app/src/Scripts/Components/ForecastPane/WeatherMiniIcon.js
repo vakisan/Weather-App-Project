@@ -7,7 +7,7 @@ import ThunderStorm from '../../../Images/ThunderStormMini.svg'
 import NightRain from '../../../Images/CloudyNightRainMini.svg'
 
 class WeatherMiniIcon{
-
+    // Constructor which displays the diffrent weather icon based on the weather conditions.
     constructor(weatherCondition,hour){
         this.weather = {
             CLOUDYSUNNY: {
@@ -54,14 +54,14 @@ class WeatherMiniIcon{
                 Code: [806]
             }
         }
-        this.img = null;
-        this.msg = null;
+        this.img = null; // Icon Image
+        this.msg = null; // Weather Icon description
         for (let property in this.weather) {
             if (this.weather[property].Code.includes(weatherCondition)){
                 this.img = this.weather[property].Icon
                 this.msg = this.weather[property].Message
+                // Conditions - Based on the time & weather condition display these specific icon images + description.
                 if(hour>20 || hour<6){
-                    console.log(hour)
                     if([802,803,804].includes(weatherCondition)){
                         this.img = this.weather.CLOUDYNIGHT.Icon
                         this.msg = this.weather.CLOUDYNIGHT.Message
@@ -79,7 +79,7 @@ class WeatherMiniIcon{
         }
     }
 
-
+    //get methods for parts of weatherMiniIcon
     getWeatherIcon(){
         return this.img
     }
